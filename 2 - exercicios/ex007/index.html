@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <hr>
+    <hr>
+    <h1>Principais Formatações</h1>
+    <hr>
+    <hr>
+    <br>
+    <h2>1. Negrito/Destaque</h2>
+    <hr>
+    <p>A tag usada para <b>negrito</b> é &lt;/b&gt;, (sem semântica, usada na CSS).</p>
+    <p>Para ter signficado usa-se a tag &lt;/strong&gt; que deixa o período selecionado <strong>destacado</strong>.</p>
+    <h2>2. Itálico/Ênfase</h2>
+    <hr>
+    <p>A tag utilizada para a forma <i>itálico</i> é a tag &lt;/i&gt;, (sem semântica, usada na CSS).</p>
+    <p>Para dar <em>ênfase</em> em um período selecionado, usa-se a tag &lt;/em&gt;, da qual contém significado no HTML5.</p>
+    <h2>3. Texto Marcado</h2>
+    <hr>
+    <p>Para <mark>destacar na forma como um marcador</mark> usa-se a tag &lt;/mark&gt;</p>
+    <h3>3.1. Mudar cor do marcador</h3>
+    <p>Para mudar a cor do marcador de uma <mark style="background-color:rgb(27, 160, 45);">palavra marcada</mark>, usa-se o paramentro style dentro da tag mark.</p>
+    <p><mark style="background-color:red;">OBS: USANDO ESTE PARAMENTRO DENTRO DA TAG EM SI, <br>NÃO SERÁ APLICADO A COR EM OUTRAS MARCAÇÕES. <br>DEVERÁ ADD A TAG STYLE NO HEAD DO CÓDIGO JUNTO A UM SELETOR.</mark></p>
+    <h2>4. Texto Grande e pequeno</h2>
+    <hr>
+    <p>Para usar um texto ou <big>palavra grande</big>, usa-se a tag &lt;/big&gt;, porém ela é obsoleta, então use a CSS.</p>
+    <p>Agora para um texto ou <small>palavra pequena</small>, usa-se a tag &lt;/small&gt;.</p>
+    <h2>5. Texto deletado</h2>
+    <hr>
+    <p>Eis o exemplo de uso do <del>Texto Deletado</del>, usamos a tag &lt;/del&gt;</p>
+    <h2>6. Texto inserido(sublinhado)</h2>
+    <hr>
+    <p>Um <ins>Texto Inserido</ins> é o mesmo que <u>Texto Sublinhado</u>, mas com semântica
+    </p>
+    <p>Usa-se as tags &lt;/ins&gt; e &lt;/u&gt;, respectivamente.</p>
+    <h2>7. Texto Sobrescrito e Subscrito</h2>
+    <hr>
+    <p>Exemplo de texto sem a aplicação das tags -> Fórmula da água: H2O - Fórmula matemática: 2x2+3</p>
+    <p>Exemplo de texto com aplicação das tags &lt;/sup&gt; e &lt;/sub&gt;:</p>
+    <p>Fórmula matemática: 2x<sup>2</sup>+3</p>
+    <p>Fórmula da Água: H<sub>2</sub>O</p>
+    <h2>8. Código-Fonte</h2>
+    <hr>
+    <p>Validando maioridade em Python:</p>
+    <pre style="background-color:rgb(41, 146, 207) ;">
+        <code>
+        idade = int(input("Digite sua idade:"))
+        if(idade <= 18){
+            print("Você é de menor.")
+        }
+        else{
+            print("Você é de maior.")
+        }
+        </code>
+    </pre>
+    <h2>9. Citações</h2>
+    <hr>
+    <p>Citação de Neil Armstrong, primeiro astronauta a pisar na lua <q style="background-color:rgb(59, 196, 107) ;">Um pequeno passo para um homem, um grande salto para a humanidade.</q></p>
+    <h2>10. Citações Completas</h2>
+    <hr>
+    <p>Citação de Yuri Gagarin, primeiro astronauta a ir ao espaço <blockquote>Eu vejo a Terra.Ela é azul!</blockquote></p>
+    <h2>11. Abreviações</h2>
+    <hr>
+    <p>Estou estudando <abbr title="HyperText Markup Language 5">HTML5</abbr> e <abbr title="Cascating Style Sheet 3">CSS3</abbr></p>
+    <h2>12. Texto Invertido</h2>
+    <hr>
+    <p>David invertido é <bdo dir="rtl">David</bdo></p>
+</body>
+</html>

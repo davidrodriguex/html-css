@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Audios HTML5</title>
+</head>
+<body>
+    <h1>Inserindo áudios HTML5</h1>
+    <p>A primeira maneira, a mais simples inserindo áudio em uma página: </p>
+    <p>Backwoods BBQ - Chris Haugen</p>
+    <audio src="midia/Backwoods BBQ - Chris Haugen.mp3" controls preload="metadata">Backwoods BBQ - Chris Haugen</audio>
+    <h2>Inserindo áudio no "Modo Compatibilidade"</h2>
+    <p>Como nem todo browser aceita o tipo de áudio padrão mp3 é necessário utilizar outros tipos como wav e ogg:</p>
+    <p>Casttle - Telecasted</p>
+    <audio controls preload="metadata" >
+        <source src="midia/Cattle - Telecasted.mp3" type="audio/mpeg">
+        <source src="midia/Cattle-Telecasted.wav" type="audio/wav">
+        <source src="midia/Cattle-Telecasted.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não aceita os formatos de áudios, <a href="midia/Cattle - Telecasted.mp3" target="_blank">clique aqui</a> para fazer download da música.(Clique em Ctrl + S para iniciar o download.)</p>
+    </audio>
+    <p>PS.: Caso o seu Browser não tenha compatibilidade uma mensagem para download será apresentada.</p>
+    <p>Infelizmente seu navegador não aceita os formatos de áudios, <a href="midia/Cattle - Telecasted.mp3" target="_blank">clique aqui</a> para fazer download da música.</p>
+</body>
+</html>

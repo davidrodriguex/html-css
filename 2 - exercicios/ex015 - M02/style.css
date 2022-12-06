@@ -1,0 +1,67 @@
+@charset "utf-8";
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: darkgrey;
+}
+
+/*Box01*/
+
+h1 {
+    background-color: burlywood;
+    height: 250px;
+    width: 250px;
+
+    /* Ordem de config das bordas: width style color */
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: cadetblue;
+
+    /* Configurando padding */
+     
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding: 20px;
+
+    /* Configurando margin */
+
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+
+/* Box02 */
+#box {
+    height: 100px;
+    width: 350px;
+    background-color: cadetblue;
+    border: 20px solid brown;
+    margin: 100px auto 100px auto;
+    
+}
+a {
+    background-color: cornflowerblue;
+    color: bisque;
+    text-decoration: none;
+    font-size: 16px;
+    border: 5px solid brown;
+    margin: 10px auto 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a:hover {
+    text-decoration: underline;
+    color: coral;
+}
+div {
+    position: relative;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

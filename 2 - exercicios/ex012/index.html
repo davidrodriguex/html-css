@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos</h1>
+    <h1>1. Vídeos em Hospedagem Local</h1>
+    <p>Este primeiro vídeo é a inserção mais simples de um MP4:</p>
+    <video src="midia/video_01.mp4" controls width="500" height="315" poster="post-1.png"></video>
+    <p>Assim como em áudios, vídeos também tem seu "Modo Compatibiidade" para MP4, MKV, Webm e OGV:</p>
+    <video controls width="500" height="315" poster="post-2.png">
+        <source src="midia/video_02.mp4" type="video/mpeg">
+        <source src="midia/Video 02.mkv" type="video/mkv">
+        <source src="midia/Video 02.webm" type="video/webm">
+        <p>Infelizmente seu navegador não é compatível com o formato do vídeo, <a href="midia/video_02.mp4" target="_blank">clique aqui</a> para fazer download.</p>
+    </video>
+    <p><a href="midia/video_01.mp4" target="_blank">Vídeo 1</a> e <a href="midia/Video 02.m4v" target="_blank">Vídeo 2</a> para download</p>
+    <h1>2. Incorporação de vídeos em Hospedagem Externa</h1>
+    <p>Para reduzir o consumo de banda inserindo o vídeo no própio site é mais víavel utilizar Incorporação externa: </p>
+    <h2>2.1 - Youtube: </h2>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/aNrmKCV31iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>2.2 - Vimeo: </h2>
+    <p>Já a Incorporação do Vímeo é para vídeos privados, sites pagos.</p>
+    <iframe src="https://player.vimeo.com/video/764153868?h=813597bb77" width="400" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/764153868">Nummer 2</a> from <a href="https://vimeo.com/chezeddy">Eddy</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>
