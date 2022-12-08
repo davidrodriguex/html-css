@@ -3,4 +3,4 @@
 
 Primeiros passos com o Git e Github - data: 06.12.22
 
-<a href="davidrodriguex.github.io/html-css/2 - exercicios/ex001">Execute o ex001</a>
+<a href="https://davidrodriguex.github.io/html-css/2%20-%20exercicios/ex001/">Execute o ex001</a>
