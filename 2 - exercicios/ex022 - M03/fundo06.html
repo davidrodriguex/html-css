@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centraizando divs</title>
+    <style>
+        #container {
+            background-color: lightskyblue;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            height: 90vh;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+        }
+        #conteudo {
+            background-color: sienna;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <article id="container">
+        <section id="conteudo"></section>
+    </article>
+</body>
+</html>
