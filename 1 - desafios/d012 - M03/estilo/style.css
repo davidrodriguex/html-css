@@ -13,6 +13,7 @@ html, body {
     min-height: 100vh;
     font-family: var(--fonte03);
     font-size: 1em;
+    background-color: lightgray;
 }
 body a {
     text-decoration: none;
@@ -43,9 +44,16 @@ header strong:hover {
 }
 section {
     font-family: var(--fonte02);
-    font-size: 3em;
-    margin-top: 60px;
-    margin-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+.estrofe_normal {
+    background-color: white;
+}
+.estrofe_imagem {
+    background-color: gray;
 }
 footer {
     padding: 10px;
