@@ -58,6 +58,7 @@ section {
     padding-bottom: 5vh;
 }
 .estrofe_imagem {
+    color: white;
     background-color: gray;
     background-repeat: no-repeat;
     background-position: center center;
