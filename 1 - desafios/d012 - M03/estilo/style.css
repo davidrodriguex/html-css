@@ -59,6 +59,11 @@ section {
 }
 .estrofe_imagem {
     background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 1px 2px 4px 3px rgba(0, 0, 0, 0.359);
 }
 .estrofe_imagem p {
     background-color: rgba(66, 62, 62, 0.408);
@@ -67,17 +72,10 @@ section {
 }
 #img_01 {
     background-image: url(../imagens/background001.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 #img_02 {
     background-image: url(../imagens/background002.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.426);
 }
 footer {
     padding: 10px;
