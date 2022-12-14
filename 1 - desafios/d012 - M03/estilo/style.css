@@ -54,6 +54,9 @@ section {
 .estrofe_normal {
     background-color: white;
 }
+.estrofe_normal p {
+    padding-bottom: 5vh;
+}
 .estrofe_imagem {
     background-color: gray;
 }
@@ -62,8 +65,23 @@ section {
     display: inline-block;
     padding: 5px;
 }
+#img_01 {
+    background-image: url(../imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#img_02 {
+    background-image: url(../imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 footer {
     padding: 10px;
+    font-size: 1.5vw;
 }
 footer a {
     text-decoration: none;
