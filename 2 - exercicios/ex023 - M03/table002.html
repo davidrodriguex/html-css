@@ -8,13 +8,26 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption {
+            font-size: 1.25em;
+            background-color: lightblue;
+        }
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightblue;
         }
         td, th {
             border: 1px solid black;
@@ -36,11 +49,12 @@
             TFOOT
                 th, tr, td
 -->
-    <h1>Habitantes por Unidade Federativa</h1>
+    <h1>Estudo de Tabelas complexas</h1>
     <table>
+    <caption>Habitantes por Unidade Federativa</caption>
         <thead>
-            <th>Unidade Federativa</th>
-            <th>População</th>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr>
@@ -153,7 +167,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>182 992 338</strong></td>
         </tfoot>
     </table>
