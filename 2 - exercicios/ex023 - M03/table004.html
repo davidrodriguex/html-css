@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        #container {
+            overflow: auto;
+        }
         table {
             border-collapse: collapse;
         }
@@ -13,6 +16,10 @@
         }
         .destaque_2 {
             background-color: brown;
+        }
+        caption {
+            font-size: 1.75em;
+            padding: 10px;
         }
         th, td {
             border: 1px solid black;
@@ -24,35 +31,60 @@
 </head>
 <body>
     <h1>Estudo de Colgroup</h1>
-    <table>
-        <colgroup>
-            <col class="destaque">
-            <col class="destaque_2">
-            <col class="destaque">
-            <col class="destaque_2">
-        </colgroup>
-        <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-            <th>Profissão</th>
-            <th>Animal</th>
-        </tr>
-        <tr>
-            <td>David</td>
-            <td>19</td>
-            <td>Coordenador</td>
-            <td>Sim</td>
-        </tr><tr>
-            <td>Jeferson</td>
-            <td>21</td>
-            <td>Professor</td>
-            <td>Sim</td>
-        </tr><tr>
-            <td>Gustavo</td>
-            <td>18</td>
-            <td>Professor</td>
-            <td>Não</td>
-        </tr>
-    </table>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="destaque">
+                <col class="destaque_2">
+                <col class="destaque">
+                <col class="destaque_2">
+                <col class="destaque">
+                <col class="destaque_2">
+                <col class="destaque">
+                <col class="destaque_2">
+            </colgroup>
+            <caption>Implementando responsividade</caption>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+                <th>Animal</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+                <th>Animal</th>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>19</td>
+                <td>Coordenador</td>
+                <td>Sim</td>
+                <td>David</td>
+                <td>19</td>
+                <td>Coordenador</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td>Jeferson</td>
+                <td>21</td>
+                <td>Professor</td>
+                <td>Sim</td>
+                <td>Jeferson</td>
+                <td>21</td>
+                <td>Professor</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>18</td>
+                <td>Professor</td>
+                <td>Não</td>
+                <td>Gustavo</td>
+                <td>18</td>
+                <td>Professor</td>
+                <td>Não</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
