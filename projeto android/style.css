@@ -33,6 +33,8 @@ header{
     padding-top: 30px;
     padding-bottom: 30px;
     text-shadow: 0.8px 2px 3px black;
+    background-color: #2fa866;
+    background-image: linear-gradient( #3ddc84, #2fa866, #1a5c37);
 }
 header > h1{
     font-family: var(--fonte-destaque);
@@ -40,11 +42,36 @@ header > h1{
 }
 header > p{
     font-size: 1.2em;
-    padding: 15px;
+    padding: 30px;
     width: 535px;
     margin: auto;
+}
+nav{
+    height: 35px;
+    background-color: #1a5c37;
+    box-shadow: 1px 0.5px 1px black;
+}
+nav > a{
+    color: white;
+    font-size: 18px;
+    margin: 15px;
+}
+nav > a:hover{
+    padding: 4px;
+    font-size: 1.1em;
+    transition: 0.3s;
+    font-weight: bold;
+
 }
 main{
     background-color: white;
     width: 800px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+footer{
+    background-color: var(--cor4);
+    text-align: center;
+    color: white;
 }
