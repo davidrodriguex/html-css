@@ -45,6 +45,7 @@ header > p{
     padding: 30px;
     width: 535px;
     margin: auto;
+    font-weight: lighter;
 }
 nav{
     height: 35px;
@@ -57,9 +58,9 @@ nav > a{
     margin: 15px;
 }
 nav > a:hover{
-    padding: 4px;
+    padding: 5px;
     font-size: 1.1em;
-    transition: 0.3s;
+    transition: 0.5s;
     font-weight: bold;
 
 }
@@ -67,11 +68,47 @@ main{
     background-color: white;
     width: 800px;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 1px 1px 10px 10px;
     padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 8px black;
+}
+main > article > h1, h2{
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+}
+main > article > h1{
+    padding-bottom: 20px;
+}
+main > article > h2{
+    padding: 1px 0px 1px 10px;
+    margin: 15px 0px 15px 0px;
+    background-image: linear-gradient(to right, var(--cor0), white);
+}
+main > article > p{
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 30px;
+    padding: 1px 0px 1px 10px;
+    margin: 5px 0px 5px 0px;
+}
+main > article > p > strong{
+    color:var(--cor4);
+}
+main > article > p > a{
+    color: var(--cor5);
+    font-weight: bold;
+}
+main > article > p > a:hover{
+    padding: 1px;
+    font-size: 1.05em;
+    transition: 0.5s;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 footer{
     background-color: var(--cor4);
     text-align: center;
     color: white;
+    height: 25px;
 }
