@@ -110,11 +110,81 @@ main > article > picture > img{
     padding: 11px;
 }
 #video{
+    margin: 10px 0px 20px 0px;
+    padding: 20px;
     background-color: var(--cor4);
+}
+#video > iframe {
+    margin-left: 55px;
+}
+aside {
+    background-color: var(--cor0);
+    width: 750px;
+    margin: auto;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px black;
+}
+aside > ul > li :hover {
+    padding: 5px;
+    font-weight: bold;
+}
+aside > h3 {
+    background-color: var(--cor3);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+aside > p{
+    text-align: justify;
+    text-indent: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+aside > p > strong{
+    color:var(--cor3);
+}
+aside > p > a{
+    color: var(--cor4);
+    font-weight: bold;
+}
+aside > p > a:hover{
+    padding: 1px;
+    font-size: 1.05em;
+    transition: 0.5s;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+aside > ul > li {
+    text-indent: 50px;
+    list-style-type: none;
+}
+main > p {
+    text-align: justify;
+    text-indent: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+main > p > strong{
+    color:var(--cor3);
 }
 footer{
     background-color: var(--cor4);
     text-align: center;
-    color: white;
+    color: var(--cor1);
     height: 25px;
+}
+footer > p {
+    padding-top: 5px;
+    margin: 10px;
+}
+footer > p > a{
+    color: white;
+    font-weight: bold;
+}
+footer > p > a:hover{
+    padding: 1px;
+    transition: 0.2s;
+    font-weight: bolder;
+    text-decoration: underline;
 }
