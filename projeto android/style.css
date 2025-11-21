@@ -29,7 +29,7 @@ body{
 header{
     color: white;
     text-align: center;
-    height: 150px;
+    min-height: 150px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-shadow: 0.8px 2px 3px black;
@@ -43,12 +43,10 @@ header > h1{
 header > p{
     font-size: 1.2em;
     padding: 30px;
-    width: 535px;
-    margin: auto;
     font-weight: lighter;
 }
 nav{
-    height: 35px;
+    min-height: 35px;
     background-color: #1a5c37;
     box-shadow: 1px 0.5px 1px black;
 }
@@ -65,10 +63,11 @@ nav > a:hover{
 }
 main{
     background-color: white;
-    width: 800px;
+    min-width: 320px;
+    max-width: 800px;
     margin: auto;
-    border-radius: 1px 1px 10px 10px;
     margin-bottom: 15px;
+    border-radius: 1px 1px 10px 10px;
     box-shadow: 0px 2px 8px black;
 }
 main > article > h1, h2{
@@ -105,21 +104,31 @@ main > article > p > a:hover{
     font-weight: bolder;
     text-decoration: underline;
 }
-main > article > picture > img{
-    width: 780px;
-    padding: 11px;
+main > article > picture > img {
+    width: 100%;
+}
+main > article > #bugdroid {
+    width: 50%;
+    display: block;
+    margin: auto;
 }
 #video{
-    margin: 10px 0px 20px 0px;
-    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: var(--cor4);
 }
 #video > iframe {
-    margin-left: 55px;
+    width: 90%;
+    display: block;
+    margin: auto;
 }
 aside {
     background-color: var(--cor0);
-    width: 750px;
+    min-width: 270px;
+    max-width: 750px;
     margin: auto;
     padding-bottom: 10px;
     border-radius: 10px;
@@ -172,7 +181,9 @@ footer{
     background-color: var(--cor4);
     text-align: center;
     color: var(--cor1);
-    height: 25px;
+    min-height: 25px;
+    display: block;
+    width: 100%;
 }
 footer > p {
     padding-top: 5px;
