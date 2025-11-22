@@ -32,7 +32,7 @@ header{
     text-align: center;
     min-height: 120px;
     padding-top: 40px;
-    padding-bottom: 30px;
+    
 }
 header > h1{
     font-family: var(--fonte-destaque);
@@ -45,6 +45,7 @@ header > p{
     font-weight: lighter;
     max-width: 500px;
     margin: auto;
+    padding-bottom: 30px;
 }
 nav{
     background-color: #1a5c37;
@@ -109,7 +110,7 @@ main > article > p > a:hover{
     text-decoration: underline;
 }
 main > article > picture > img {
-    max-width: 750px;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -120,7 +121,6 @@ main > article > #bugdroid {
 }
 #video{
     width: 100%;
-    margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -133,18 +133,14 @@ main > article > #bugdroid {
 }
 aside {
     background-color: var(--cor0);
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
     padding-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 8px black;
 }
-aside > ul > li :hover {
-    padding: 5px;
-    font-weight: bold;
-}
 aside > h3 {
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     color: white;
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
@@ -166,9 +162,13 @@ aside > p > a:hover{
     font-weight: bolder;
     text-decoration: underline;
 }
-aside > ul > li {
-    text-indent: 50px;
+aside > ul {
+    columns: 2;
     list-style-type: none;
+}
+ aside > ul > li :hover {
+    padding: 5px;
+    font-weight: bold;
 }
 main > p {
     text-align: justify;
