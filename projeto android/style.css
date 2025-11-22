@@ -27,41 +27,43 @@ body{
     background-color: var(--cor1);
 }
 header{
-    color: white;
-    text-align: center;
-    min-height: 150px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    color: white;    
     background-image: linear-gradient( #3ddc84, #2fa866, #1a5c37);
+    text-align: center;
+    min-height: 120px;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 header > h1{
     font-family: var(--fonte-destaque);
     font-size: 2.8em;
-    text-shadow: 0.8px 2px 3px rgba(0, 0, 0, 0.287);
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.356);
+    margin-bottom: 20px;
 }
 header > p{
     font-size: 1.2em;
+    font-weight: lighter;
     max-width: 500px;
     margin: auto;
-    font-weight: lighter;
 }
 nav{
-    min-height: 35px;
     background-color: #1a5c37;
-    box-shadow: 1px 0.5px 1px black;
+    min-height: 30px;
+    padding: 4.5px;
 }
 nav > a{
     color: white;
     font-size: 18px;
-    padding: 15px;
+    padding: 10px;
+    transition-duration: .2s;
 }
 nav > a:hover{
-    padding: 5px;
-    transition: 0.5s;
+    padding: 15.5px;
+    transition:0.5s;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.541);
-    color: #2fa866;
-    border-radius: 10px;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    border-radius: 3px 3px 0px 0px;
 }
 main{
     background-color: white;
@@ -92,7 +94,7 @@ main > article > p{
     padding: 1px 0px 1px 10px;
     margin: 5px 10px 5px 10px;
 }
-main > article > p > strong{
+main strong{
     color:var(--cor3);
 }
 main > article > p > a{
@@ -107,7 +109,9 @@ main > article > p > a:hover{
     text-decoration: underline;
 }
 main > article > picture > img {
-    width: 100%;
+    max-width: 750px;
+    display: block;
+    margin: auto;
 }
 main > article > #bugdroid {
     width: 50%;
@@ -129,8 +133,7 @@ main > article > #bugdroid {
 }
 aside {
     background-color: var(--cor0);
-    min-width: 270px;
-    max-width: 750px;
+    max-width: 90%;
     margin: auto;
     padding-bottom: 10px;
     border-radius: 10px;
@@ -151,9 +154,6 @@ aside > p{
     text-indent: 30px;
     padding: 5px;
     margin: 5px;
-}
-aside > p > strong{
-    color:var(--cor3);
 }
 aside > p > a{
     color: var(--cor4);
@@ -176,26 +176,17 @@ main > p {
     padding: 10px;
     margin: 10px;
 }
-main > p > strong{
-    color:var(--cor3);
-}
 footer{
     background-color: var(--cor4);
     text-align: center;
     color: var(--cor1);
-    min-height: 30px;
-    display: block;
-    width: 100%;
-}
-footer > p {
-    padding-top: 5px;
+    padding: 5px;
 }
 footer > p > a{
     color: white;
     font-weight: bold;
 }
 footer > p > a:hover{
-    transition: 0.2s;
     font-weight: bolder;
     text-decoration: underline;
 }
