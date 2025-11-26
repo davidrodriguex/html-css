@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro flutuante</title>
+    <style>
+        body{
+            background: black url(imagens/espaco.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+        #astro{
+            width: 100%;
+        }
+        img{
+            width: 50vw; /*define quantos % será o tamanho da img em relação a viewport*/
+            max-width: 500px; /*tamanho máximo independente da tela*/
+            min-width: 100px; /*tamanho mínimo independente da tela*/
+
+            /*Centralização da img*/
+            position: absolute; 
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="astro">
+        <img src="imagens/astronauta.png" alt="astronauta">
+    </div>
+</body>
+</html>
