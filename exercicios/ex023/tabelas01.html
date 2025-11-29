@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            vertical-align: middle;
+        }
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 15px;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Construção de tabelas complexas</h1>
+    <table>
+        <thead>
+            <th>Unidade Federativa</th>
+            <th>População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 081 801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 393 441</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Total de habitantes</th>
+            <td class="num"><strong>000000</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
