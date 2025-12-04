@@ -12,15 +12,25 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" autocomplete="on" method="post">
-        <p>
-            <label for="iemal">Email</label>
-            <input type="email" name="email" id="iemail" autocomplete="email" required>
-        </p>
-        <p>
-            <label for="iphone">Telefone:</label>
-            <input type="tel" name="phone" id="iphone" autocomplete="tel" required>
-        </p>
+    <form action="cadastro.php" autocomplete="on" method="get">
+        <fieldset style="border-color: black; width: 30vw;">
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iname">Nome</label>
+                <input type="text" name="name" id="iname" minlength="8" maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="iemal">Email</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="example@gmail.com" minlength="13" required>
+            </p>
+            <p>
+                <label for="iphone">Telefone:</label>
+                <input type="tel" name="phone" id="iphone" autocomplete="tel" pattern="^\d{2}\d{4,5}\d{4,5}$" placeholder="(xx) 9xxxx-xxxx" required>
+            </p>
+        </fieldset>
+        <!--Learn RegEx - Regular Expressions 
+
+            Use pattern atribute-->
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
