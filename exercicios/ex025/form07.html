@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icountry">Estado:</label>
+            <select name="country " id="icountry">
+                <option value="" selected>--- Escolha ---</option>
+                <option value="SP">São Paulo</option>
+                <option value="CE">Ceará</option>
+                <option value="AM">Amazonas</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select>
+        </p>
+        <p>
+            <label for="iage">Nível de ensino:</label>
+            <select name="ensino" id="iensino">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Ensino Fundamental I">
+                    <option value="quinta">Quinta série</option>
+                    <option value="sexta">Sexta série</option>
+                    <option value="setima">Sétima série</option>
+                </optgroup>
+
+                <optgroup label="Ensino Fundamental II">
+                    <option value="oitava">Oitava série</option>
+                    <option value="nova">Nova série</option>
+                </optgroup>
+
+                <optgroup label="Ensino Médio">
+                    <option value="primeiro ano">Primeiro ano</option>
+                    <option value="segundo ano">Segundo ano</option>
+                    <option value="terceiro ano">Terceiro ano</option>
+                </optgroup>
+
+                <optgroup label="Faculdade">
+                    <option value="graduacao">Primeira graduação</option>
+                    <option value="pos">Pós graduação</option>
+                    <option value="mestrado">Mestrado</option>
+                    <option value="doutorado">Doutorado</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="MED">Médico</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
