@@ -2,6 +2,45 @@
 
 /* Todas as demais versões de mídias */
 
-@media print {
+@media print { /* IMPRESSÃO */
     
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    * {
+        font-size: 0.9em;
+    }
+    main {
+        max-width: 70vw;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) { /* TABLETS */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+@media screen and (min-width: 993px) and (max-width: 1279px) { /* LAPTOPS AND SMALL DESKTOPS */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+@media screen and (min-width: 1280px) { /* LARGER DESKTOPS AND MONITORS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
 }
