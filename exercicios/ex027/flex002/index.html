@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            background-color: lightcoral;
+            margin: 10px;
+            display: flex;
+        }
+        #c1 {
+            flex-direction: row;
+        }
+        #c2 {
+            flex-direction: row-reverse;
+        }
+        #c3 {
+            flex-direction: column;
+        }
+        #c4 {
+            flex-direction: column-reverse;
+        }
+        .itens {
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="c1">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+    </div>
+    <div class="container" id="c2">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+    </div>
+    <div class="container" id="c3">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+    </div>
+    <div class="container" id="c4">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+    </div>
+</body>
+</html>
