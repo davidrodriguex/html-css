@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        #container {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .itens {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+        }
+        div#bl1 {
+            order: 0;
+        }
+        div#bl2 {
+            order: -1;
+        }
+        div#bl3 {
+            order: 2;
+        }  
+        div#bl4 {
+            order: 1;
+        }
+        div#bl5 {
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="itens" id="bl1">A</div>
+        <div class="itens" id="bl2">B</div>
+        <div class="itens" id="bl3">C</div>
+        <div class="itens" id="bl4">D</div>
+        <div class="itens" id="bl5">E</div>
+    </div>
+</body>
+</html>

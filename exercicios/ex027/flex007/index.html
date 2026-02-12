@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        #container {
+            background-color: lightcoral;
+            display: flex;
+            height: 150px;
+            align-items: flex-start;
+        }
+        .itens {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            padding: 30px;
+        }
+        div#bl1 {
+            /* flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 0; */
+
+            flex: 0 1 auto; /*valor padrão referencial == flex:initial;*/
+        }
+        div#bl2 {
+            /* flex-basis: auto;
+            flex-shrink: 0;
+            flex-grow: 0; */
+
+            flex: 0 0 auto; /*valor de mínima flexibilidade == flex:none; totalmente rígido.*/
+        }
+        div#bl3 {
+            /* flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 1; */
+
+            flex: 1 1 auto; /*valor de máxima flexibilidade == flex: auto; totalmente maleável.*/
+        }  
+        div#bl4 {
+            /* flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 2; */
+
+            flex: 2; /*número genérico aplicado, o shrink e basis são usados os valores padrões.*/
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="itens" id="bl1">A</div>
+        <div class="itens" id="bl2">B</div>
+        <div class="itens" id="bl3">C</div>
+        <div class="itens" id="bl4">D</div>
+    </div>
+</body>
+</html>
