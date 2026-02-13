@@ -5,3 +5,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html, body {
+    height: 100%;
+    background-color: rgba(245, 229, 212, 0.918);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: gray;
+    padding: 15px;
+}
+header h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+header nav {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+header a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+main {
+    width: 97%;
+    background-color: white;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+}
+main h2 {
+    margin-bottom: 15px;
+}
+main p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
