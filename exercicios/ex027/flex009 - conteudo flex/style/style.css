@@ -16,20 +16,40 @@ h1, h2, p{
     margin-bottom: 1em;
     text-align: justify;
 }
-header{
+header, section.normal{
     padding: 1em;
-    text-align: center;
 }
 header h1{
     font-size: 2em;
     padding-top: 15px;
 }
-.flex-content{
+section.flex-content{
     background-color: #333;
     color: #fff;
     padding: 1em;
-    text-align: center;
+
+    display: flex;
+    flex-flow: column nowrap;
 }
-.normal{
-    padding: 1em;
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+article > div.text{
+    flex: 1 1 500px;
+}
+article > div.media{
+    flex: 1 0 500px;
+    margin: auto;
+}
+div.media > img, iframe{
+    display: block;
+    margin: auto;
+    padding-bottom: 15px;
 }
